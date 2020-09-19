@@ -9,7 +9,7 @@ namespace Microsoft.NET.Sdk.WorkloadManifestReader
     {
         IEnumerable<WorkloadResolver.PackInfo> GetInstalledWorkloadPacksOfKind(WorkloadPackKind kind);
         IEnumerable<string> GetPacksInWorkload(string workloadId);
-        IList<WorkloadResolver.WorkloadInfo> GetWorkloadSuggestionForMissingPacks(IList<string> packId);
+        ISet<WorkloadResolver.WorkloadInfo> GetWorkloadSuggestionForMissingPacks(IList<string> packId);
         string? TryGetPackVersion(string packId);
     }
 }
